@@ -23,7 +23,6 @@ def multiplicacion (a, b):
     print("La multiplicación de", a ," x " , b , " = ", a*b)
     time.sleep(2)
 
-
 while True:
     print("""
     Indique la operación a realizar:
