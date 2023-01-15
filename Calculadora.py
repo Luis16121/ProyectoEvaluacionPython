@@ -23,6 +23,40 @@ def multiplicacion (a, b):
     print("La multiplicación de", a ," x " , b , " = ", a*b)
     time.sleep(2)
 
+def division (a, b):
+    if b == 0:
+        print("No se puede divir entre cero")
+        time.sleep(2)
+    else:
+        print("La division de",a," / ", b, " = ", a/b)
+        time.sleep(2)
+
+def raiz (a):
+    print("La raiz de",a, " = ", np.sqrt(a))
+    time.sleep(2)
+
+def exponente (a, b):
+    print(a, "elevado a",b," = ", np.power(a, b))
+    time.sleep(2)
+
+def seno (a):
+    grados = a
+    radianes = (grados* math.pi)/180
+    print("El seno de",a,"°"," = ", math.sin(radianes))
+    time.sleep(2)
+
+def coseno (a):
+    grados = a
+    radianes = (grados* math.pi)/180
+    print("El coseno de",a,"°"," = ", math.cos(radianes))
+    time.sleep(2)
+
+def tangente (a):
+    grados = a
+    radianes = (grados* math.pi)/180
+    print("La tangente de",a,"°"," = ", math.tan(radianes))
+    time.sleep(2)
+
 while True:
     print("""
     Indique la operación a realizar:
@@ -30,8 +64,13 @@ while True:
     1) Sumar    
     2) Restar
     3) Multiplicar
-    4) Apagar calculadora
-
+    4) Dividir
+    5) Raiz n
+    6) Exponente n
+    7) Seno
+    8) Coseno
+    9) Tangente
+    10) Apagar calculadora
     """)
 
     opcion = int(input(">> "))
@@ -46,5 +85,23 @@ while True:
         introducirNumero()
         multiplicacion(numero1,numero2)
     elif opcion == 4:
+        introducirNumero()
+        division(numero1,numero2)  
+    elif opcion == 5:
+        Numero()
+        raiz(num1)     
+    elif opcion == 6:
+        introducirNumero()
+        exponente(numero1,numero2)   
+    elif opcion == 7:
+        Numero()
+        seno(num1) 
+    elif opcion == 8:
+        Numero()
+        coseno(num1) 
+    elif opcion == 9:
+        Numero()
+        tangente(num1) 
+    elif opcion == 10:
         print("Hasta Pronto ✌")
         break
