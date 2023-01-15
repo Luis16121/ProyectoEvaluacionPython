@@ -1,6 +1,5 @@
 import time
 import math
-import numpy as np
 
 def Numero():
     global num1

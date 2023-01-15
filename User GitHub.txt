@@ -1,0 +1,19 @@
+Usuarios GitHub:
+
+USER_ @Luis16121
+PAss_ Tomatelo1-
+
+
+----
+GIT _USER_PASS_
+
+C:\Users\ADMIN>git config --global user.email "luis_gmla_1@hotmail.com"
+
+C:\Users\ADMIN>git config --global user.name "luisgmla1"
+
+C:\Users\ADMIN>git config user.name
+luisgmla1
+
+C:\Users\ADMIN>git config user.email
+luis_gmla_1@hotmail.com
+
